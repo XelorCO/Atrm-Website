@@ -179,7 +179,8 @@ export default function AdminDashboardPage() {
         loadPublications();
       }, 2000);
     } catch (err) {
-      setUploadStatus(`Erreur: ${err.message}`);
+      const message = err instanceof Error ? err.message : String(err);
+      setUploadStatus(`Erreur: ${message}`);
     } finally {
       setLoading(false);
     }
@@ -201,11 +202,9 @@ export default function AdminDashboardPage() {
         console.log('Remove result:', { data, error });
       }
       await supabase.from('publications').delete().eq('id', id);
-
-      alert('Publication supprimée ✅');
-      loadPublications();
     } catch (err) {
-      alert('Erreur lors de la suppression');
+      const message = err instanceof Error ? err.message : String(err);
+      setUploadStatus(`Erreur: ${message}`);
     }
   };
 
@@ -326,7 +325,10 @@ export default function AdminDashboardPage() {
                     className="form-input-modern"
                     accept="image/*"
                     multiple
-                    onChange={(e) => processFiles(e.target.files)}
+                    onChange={(e) => {
+                      const files = e.target.files;
+                      if (files) processFiles(files);
+                    }}
                     style={{ paddingTop: '12px' }}
                   />
                 </div>
