@@ -1399,9 +1399,12 @@ img {
 
   .nav-links > li > a {
     padding: 20px;
-    width: 100%;
     justify-content: space-between;
     font-size: 1.1rem;
+  }
+
+  .nav-links > li > a:last-of-type {
+    justify-content: center;
   }
 
   .nav-links a::after {
