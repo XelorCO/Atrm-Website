@@ -32,17 +32,18 @@ export default function MentionsLegalesPage() {
 
         <h3>Hébergement</h3>
         <p>
-          <strong>Hébergeur :</strong> PIXEL AS Informatique
+          <strong>Hébergeur :</strong> Soft Pac
           <br />
-          <strong>Adresse :</strong> 10 Av. de Savoie, Montmélian, 73800, FR
+          <strong>Adresse :</strong> 144 route de villard péron, 73290, La Motte
+          Servolex
           <br />
           <strong>Site web :</strong>{' '}
           <a
-            href="https://www.pixel-as.fr/"
+            href="https://www.softpac.fr/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://www.pixel-as.fr/
+            https://www.softpac.fr/
           </a>
         </p>
 
