@@ -128,7 +128,7 @@ export default function AdminDashboardPage() {
               .substring(2, 9)}.${fileExt}`;
 
             const { error: uploadError } = await supabase.storage
-              .from('publication')
+              .from('publications')
               .upload(`public/${fileName}`, img, {
                 contentType: img.type,
                 upsert: true,
@@ -140,7 +140,7 @@ export default function AdminDashboardPage() {
             const {
               data: { publicUrl },
             } = supabase.storage
-              .from('publication')
+              .from('publications')
               .getPublicUrl(`public/${fileName}`);
 
             imagesUrl.push(publicUrl);
@@ -154,7 +154,7 @@ export default function AdminDashboardPage() {
       );
 
       const { error: uploadError2 } = await supabase
-        .from('publication')
+        .from('publications')
         .insert({
           title: title,
           description: description,
