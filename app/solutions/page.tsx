@@ -1,18 +1,21 @@
 import Image from 'next/image';
 import ImageCarousel from '@/components/ImageCarousel';
+import ScrollReveal from '@/components/ScrollReveal';
 
 export default function SolutionsPage() {
   return (
     <>
-      <section className="page-header fade-in">
-        <div className="container">
-          <h1>Nos Solutions & Savoir-Faire</h1>
-          <p>
-            Quelques-uns des projets et solutions qui témoignent de notre
-            expertise.
-          </p>
-        </div>
-      </section>
+      <ScrollReveal delay={300}>
+        <section className="page-header fade-in">
+          <div className="container">
+            <h1>Nos Solutions & Savoir-Faire</h1>
+            <p>
+              Quelques-uns des projets et solutions qui témoignent de notre
+              expertise.
+            </p>
+          </div>
+        </section>
+      </ScrollReveal>
 
       {/* ========== ÉQUIPEMENTS DE MANUTENTION ========== */}
       <section
@@ -24,7 +27,6 @@ export default function SolutionsPage() {
           <div className="solution-content" style={{ padding: '60px 0' }}>
             <h2>Équipements de manutention et de convoyage</h2>
           </div>
-
           {/* Extracteur pendulaire */}
           <div className="solution-item fade-in">
             <div className="solution-image">

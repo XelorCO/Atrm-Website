@@ -83,11 +83,6 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/a-propos#secteurs" onClick={closeMenu}>
-                    Secteurs d&apos;activités
-                  </Link>
-                </li>
-                <li>
                   <Link href="/a-propos#localisation" onClick={closeMenu}>
                     Localisation du site
                   </Link>
