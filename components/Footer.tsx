@@ -67,7 +67,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>
-            © 2025 ATRM - Tous droits réservés - Fait avec ♥ par{' '}
+            © 2026 ATRM - Tous droits réservés - Fait avec ♥ par{' '}
             <a
               href="http://softpac.fr"
               target="_blank"
