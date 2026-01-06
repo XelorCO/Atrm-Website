@@ -156,8 +156,8 @@ export default function AdminDashboardPage() {
       const { error: uploadError2 } = await supabase
         .from('publications')
         .insert({
-          title: title,
-          description: description,
+          sujet: title,
+          commentaire: description,
           project_date: projectDate,
           category: category,
           images: imagesUrl,
@@ -283,12 +283,12 @@ export default function AdminDashboardPage() {
                 </div>
 
                 <div className="form-group-modern full-width">
-                  <label htmlFor="projetDate" className="form-label-static">
+                  <label htmlFor="projet_date" className="form-label-static">
                     Date de réalisation
                   </label>
                   <input
                     type="date"
-                    id="projetDate"
+                    id="projet_date"
                     className="form-input-modern"
                     value={projectDate}
                     onChange={(e) => setProjectDate(e.target.value)}

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -6,7 +7,20 @@ export default function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-col">
-            <h4>ATRM</h4>
+            <div className="mb-4">
+              {' '}
+              {/*Marge*/}
+              <Link href="/" className="inline-block">
+                <Image
+                  src="/logo-atrm-V0.png"
+                  alt="Logo ATRM"
+                  width={160}
+                  height={50}
+                  className="object-contain"
+                  priority={false}
+                />
+              </Link>
+            </div>
             <p>
               Votre partenaire pour toutes vos solutions de convoyage industriel
               depuis 1990.
