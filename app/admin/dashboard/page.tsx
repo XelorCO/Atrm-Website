@@ -374,9 +374,9 @@ export default function AdminDashboardPage() {
                   <div key={pub.id} className="publication-item">
                     <div className="publication-item-info">
                       {pub.cover_url && (
-                        <img src={pub.cover_url} alt={pub.title} />
+                        <img src={pub.cover_url} alt={pub.sujet} />
                       )}
-                      <span>{pub.title}</span>
+                      <span>{pub.sujet}</span>
                       <small>{pub.category}</small>
                     </div>
                     <div className="publication-item-actions">

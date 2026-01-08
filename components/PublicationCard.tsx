@@ -53,7 +53,7 @@ export default function PublicationCard({
           <div className="carousel-track">
             <img
               src={publication.images[currentImageIndex]}
-              alt={publication.title}
+              alt={publication.sujet}
               className="news-article-image"
             />
           </div>
@@ -81,9 +81,9 @@ export default function PublicationCard({
 
       <div className="news-information">
         <div>
-          <h3>{publication.title}</h3>
+          <h3>{publication.sujet}</h3>
           <small>{formatDate(publication.project_date)}</small>
-          <p>{publication.description}</p>
+          <p>{publication.commentaire}</p>
         </div>
 
         {/* Badge catégorie EN BAS */}
