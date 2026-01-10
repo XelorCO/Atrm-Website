@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
+import { GoogleTagManager } from '@next/third-parties/google'; // Import essentiel
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning className={poppins.variable}>
       <head>
+        {/* Note : Pour FontAwesome, envisage de passer par un package npm plus tard pour la performance, mais ça passe pour l'instant */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -37,6 +39,9 @@ export default function RootLayout({
           {children}
           <Footer />
         </ThemeProvider>
+
+        {/* Intégration propre de Google Tag Manager via @next/third-parties */}
+        <GoogleTagManager gtmId="GTM-TDDNBSXL" />
       </body>
     </html>
   );
