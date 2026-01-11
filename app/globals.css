@@ -679,6 +679,22 @@ img {
   line-height: 1.5;
   font-size: 0.95rem;
   flex-grow: 1;
+  max-height: 100px;
+  overflow-y: auto;
+  padding-right: 8px;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-blue) transparent;
+}
+.news-information p::-webkit-scrollbar {
+  width: 4px;
+}
+.news-information p::-webkit-scrollbar-track {
+  background: transparent;
+}
+.news-information p::-webkit-scrollbar-thumb {
+  background-color: var(--primary-blue);
+  border-radius: 10px;
 }
 
 .category-badge {
