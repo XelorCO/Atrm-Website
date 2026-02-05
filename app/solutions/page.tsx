@@ -12,8 +12,23 @@ export default function SolutionsPage() {
   };
 
   // =========================================================
-  // 1. DONNÉES : ÉQUIPEMENTS DE MANUTENTION
+  // DONNÉES
   // =========================================================
+
+  const integrationData = [
+    {
+      id: 'integration-item',
+      title: "Intégration d'équipements",
+      images: [
+        '/inte-equipmt1.jpg',
+        '/inte-equipmt2.jpg',
+        '/inte-equipmt3.jpg',
+      ],
+      content:
+        "Nos ensembles de manutention clés en main sont conçus pour s'adapter parfaitement aux besoins spécifiques de chaque client, optimisant le transport, le tri et le traitement des matériaux dans tous types d'industries. Nous proposons une gamme complète d'équipements modulables.",
+    },
+  ];
+
   const equipementsData = [
     {
       id: 'extracteur',
@@ -23,9 +38,28 @@ export default function SolutionsPage() {
         '/ext-pend2.jpg',
         '/ext-pend3.jpg',
         '/ext-pend4.jpg',
+        '/ext-pend5.jpg',
+        '/ext-pend6.jpg',
+        '/ext-pend7.jpg',
       ],
       content:
         'Développé et fabriqué par nos soins, nos extracteurs pendulaires allient innovation, fiabilité et longévité. Grâce à des tolérances de fabrication précises et des composants adaptés, ils offrent une étanchéité optimisée et une durabilité nettement supérieure, garantissant des performances constantes même dans les conditions les plus exigeantes.',
+    },
+    {
+      id: 'tremie-silo',
+      title: 'Trémie et Silo',
+      images: [
+        '/tr-silo1.jpg',
+        '/tr-silo2.jpg',
+        '/tr-silo3.jpg',
+        '/tr-silo4.jpg',
+        '/tr-silo5.jpg',
+        '/tr-silo6.jpg',
+        '/tr-silo7.jpg',
+        '/tr-silo8.jpg',
+      ],
+      content:
+        'Nous concevons, adaptons et rénovons tout type de trémie et silo selon vos besoins spécifiques. Que ce soit pour résister à la chaleur, à la corrosion ou à l’abrasion, nous vous proposons des solutions sur mesure, optimisées pour vos contraintes et votre utilisation.',
     },
     {
       id: 'vis',
@@ -42,7 +76,13 @@ export default function SolutionsPage() {
     {
       id: 'chaine',
       title: 'Transporteur à chaîne',
-      images: ['/tptr-a-chn1.JPG', '/tptr-a-chn2.jpg', '/tptr-a-chn3.jpg'],
+      images: [
+        '/tptr-a-chn1.jpg',
+        '/tptr-a-chn2.jpg',
+        '/tptr-a-chn3.jpg',
+        '/tptr-a-chn4.jpg',
+        '/tptr-a-chn5.jpg',
+      ],
       content:
         'Transporteurs polyvalents pour vrac et pièces. Disponibles en mono ou bi-chaîne (forgée ou marine) pour une robustesse maximale. Options de capotage isolé et maintenance simplifiée grâce aux capots rabattables. Une solution fiable, testée et sur mesure.',
     },
@@ -77,64 +117,28 @@ export default function SolutionsPage() {
         'Conçus pour le transport fiable de déchets (OM, DIB) et matériaux lourds ou abrasifs. Leur structure robuste résiste parfaitement à l’usure et aux conditions difficiles. Équipés d’un graissage automatique des chaînes, ils assurent un fonctionnement continu avec une maintenance réduite pour une longévité maximale.',
     },
     {
-      id: 'Élevateurs à godets',
+      id: 'elevateur',
       title: 'Élevateurs à godets',
       images: ['/elev-godet1.JPG', '/elev-godet2.JPG', '/elev-godet3.JPG'],
       content:
-        'Nos élévateurs à godets sont conçus pour le transport vertical de tous types de produits en vrac : carbone, charbon, sel, fines, pellets et matériaux similaires. Disponible en version à chaînes ou à bandes, il s’adapte aux contraintes de chaque installation industrielle. Équipé de chaînes marines ou mécaniques, il garantit robustesse, fiabilité et longévité, même dans des environnements exigeants.',
+        'Nos élévateurs à godets sont conçus pour le transport vertical de tous types de produits en vrac : carbone, charbon, sel, fines, pellets et matériaux similaires. Disponible en version à chaînes ou à bandes, il s’adapte aux contraintes de chaque installation industrielle.',
     },
     {
-      id: 'Trommels',
+      id: 'trommels',
       title: 'Trommels',
       images: ['/trommel1.png'],
       content:
-        'Le crible trommel, ou crible rotatif, permet de séparer et prétrier les déchets par taille sur les sites de traitement, recyclage ou compostage. Adaptable à tous types de grilles et équipé de mélangeurs, il offre une solution efficace et modulable pour le tri des matériaux.',
+        'Le crible trommel, ou crible rotatif, permet de séparer et prétrier les déchets par taille sur les sites de traitement, recyclage ou compostage. Adaptable à tous types de grilles et équipé de mélangeurs, il offre une solution efficace et modulable.',
     },
     {
-      id: 'Convoyeur à bande en eau',
+      id: 'bande-eau',
       title: 'Convoyeur à bande en eau',
       images: ['/conv-b-eau1.jpg', '/conv-b-eau2.jpg', '/conv-b-eau3.jpg'],
       content:
-        'Nos convoyeurs à bande en eau offrent une solution innovante pour le transport de produits de combustion, issus des centrales thermiques et centrales biomasse. La bande permet de limiter les coûts de maintenance comparativement aux systèmes à chaîne, offrant un fonctionnement plus continu et moins exigeant en entretien. De plus, la caisse en inox ferritique assure une résistance durable à la corrosion, garantissant une longévité optimale même dans des conditions industrielles difficiles. Grâce à leur conception robuste, fermée et optimisée, ces convoyeurs assurent un transport fiable, sûr et respectueux de l’environnement, tout en limitant la poussière et les émissions, même pour les matériaux abrasifs ou chauds.',
+        'Nos convoyeurs à bande en eau offrent une solution innovante pour le transport de produits de combustion. La bande permet de limiter les coûts de maintenance comparativement aux systèmes à chaîne. La caisse en inox ferritique assure une résistance durable à la corrosion.',
     },
   ];
 
-  // =========================================================
-  // 2. DONNÉES : INTÉGRATION
-  // =========================================================
-  const integrationData = [
-    {
-      id: 'integration-item',
-      title: "Intégration d'équipements",
-      images: [
-        '/inte-equipmt1.jpg',
-        '/inte-equipmt2.jpg',
-        '/inte-equipmt3.jpg',
-      ],
-      content:
-        "Nos ensembles de manutention clés en main sont conçus pour s'adapter parfaitement aux besoins spécifiques de chaque client, optimisant le transport, le tri et le traitement des matériaux dans tous types d'industries. Nous proposons une gamme complète d'équipements modulables.",
-    },
-    {
-      id: 'Trémie et Silo',
-      title: 'Trémie et Silo',
-      images: [
-        '/tr-silo1.jpg',
-        '/tr-silo2.jpg',
-        '/tr-silo3.jpg',
-        '/tr-silo4.jpg',
-        '/tr-silo5.jpg',
-        '/tr-silo6.jpg',
-        '/tr-silo7.jpg',
-        '/tr-silo8.jpg',
-      ],
-      content:
-        'Nous concevons, adaptons et rénovons tout type de trémie et silo selon vos besoins spécifiques. Que ce soit pour résister à la chaleur, à la corrosion ou à l’abrasion, nous vous proposons des solutions sur mesure, optimisées pour vos contraintes et votre utilisation.',
-    },
-  ];
-
-  // =========================================================
-  // 3. DONNÉES : MAINTENANCE
-  // =========================================================
   const maintenanceData = [
     {
       id: 'maintenance-item',
@@ -145,6 +149,9 @@ export default function SolutionsPage() {
     },
   ];
 
+  // =========================================================
+  // RENDU 1 : GRILLE (Pour Équipements)
+  // =========================================================
   const renderGrid = (data: typeof equipementsData) => (
     <div className="solutions-grid">
       {data.map((item, index) => {
@@ -178,9 +185,27 @@ export default function SolutionsPage() {
     </div>
   );
 
+  // =========================================================
+  // RENDU 2 : LIGNE (Pour Intégration et Maintenance)
+  // =========================================================
+  const renderRows = (data: typeof integrationData) => (
+    <div className="solutions-list">
+      {data.map((item) => (
+        <div key={item.id} className="solution-item fade-in">
+          <div className="solution-image">
+            <ImageCarousel images={item.images} alt={item.title} />
+          </div>
+          <div className="solution-content">
+            <h3>{item.title}</h3>
+            <p>{item.content}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
     <>
-      {/* HEADER */}
       <section className="page-header">
         <ScrollReveal delay={200}>
           <div className="container">
@@ -192,6 +217,24 @@ export default function SolutionsPage() {
           </div>
         </ScrollReveal>
       </section>
+
+      {/* INTÉGRATION - STYLE LIGNE (IMAGE GAUCHE) */}
+      <section
+        id="integration"
+        className="solutions-list-section"
+        style={{ backgroundColor: 'var(--bg-color)', padding: '80px 0' }}
+      >
+        <div className="container">
+          <ScrollReveal>
+            <h2 style={{ marginBottom: '50px' }}>
+              Intégration d&apos;équipements
+            </h2>
+          </ScrollReveal>
+          {renderRows(integrationData)}
+        </div>
+      </section>
+
+      {/* ÉQUIPEMENTS - STYLE GRILLE (CARTES MODERNES) */}
       <section id="equipements" className="solutions-grid-section">
         <div className="container">
           <ScrollReveal>
@@ -202,26 +245,18 @@ export default function SolutionsPage() {
           {renderGrid(equipementsData)}
         </div>
       </section>
+
+      {/* MAINTENANCE - STYLE LIGNE (IMAGE GAUCHE) */}
       <section
-        id="integration"
-        className="solutions-grid-section"
-        style={{ backgroundColor: 'var(--bg-color)' }}
+        id="maintenance"
+        className="solutions-list-section"
+        style={{ padding: '80px 0' }}
       >
-        <div className="container">
-          <ScrollReveal>
-            <h2 style={{ marginBottom: '50px' }}>
-              Intégration d&apos;équipements
-            </h2>
-          </ScrollReveal>
-          {renderGrid(integrationData)}
-        </div>
-      </section>
-      <section id="maintenance" className="solutions-grid-section">
         <div className="container">
           <ScrollReveal>
             <h2 style={{ marginBottom: '50px' }}>Maintenance</h2>
           </ScrollReveal>
-          {renderGrid(maintenanceData)}
+          {renderRows(maintenanceData)}
         </div>
       </section>
     </>
