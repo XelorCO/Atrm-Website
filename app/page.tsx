@@ -4,16 +4,13 @@ import PartnersLogos from '@/components/PartnersLogos';
 import Link from 'next/link';
 import Image from 'next/image';
 import ScrollReveal from '@/components/ScrollReveal';
-
 export default async function HomePage() {
   const supabase = await createClient();
-
   const { data: publications } = await supabase
     .from('publications')
     .select('*')
     .order('project_date', { ascending: false })
     .limit(3);
-
   return (
     <>
       {/* Hero Section */}
@@ -65,6 +62,7 @@ export default async function HomePage() {
       </section>
 
       {/* About Preview */}
+
       <section className="about-preview">
         <div className="container">
           <div className="about-preview-grid">
@@ -77,6 +75,7 @@ export default async function HomePage() {
                 className="rounded-lg"
               />
             </div>
+
             <ScrollReveal delay={300}>
               <div
                 className="about-preview-content fade-in"
@@ -88,12 +87,14 @@ export default async function HomePage() {
                   <span className="initial">R</span>éalisations{' '}
                   <span className="initial">M</span>écaniques
                 </h2>
+
                 <p>
                   Fondée en 1990, la société ATRM est spécialisée dans la
                   conception et la fabrication d&apos;équipements de convoyage
                   robustes et fiables pour les usines d&apos;incinération, les
                   centrales biomasses et toutes autres industries.
                 </p>
+
                 <Link href="/a-propos" className="btn btn-secondary">
                   En savoir +
                 </Link>
@@ -104,10 +105,12 @@ export default async function HomePage() {
       </section>
 
       {/* News Section - Dernières Réalisations */}
+
       <section className="news">
         <ScrollReveal delay={300}>
           <div className="container">
             <h2 className="fade-in">Nos Dernières Réalisations</h2>
+
             <div
               className="news-grid fade-in"
               style={{ transitionDelay: '0.2s' }}
@@ -122,6 +125,7 @@ export default async function HomePage() {
                 </p>
               )}
             </div>
+
             <div className="text-center" style={{ marginTop: '40px' }}>
               <Link href="/realisations" className="btn btn-secondary">
                 Toutes nos réalisations
@@ -130,19 +134,25 @@ export default async function HomePage() {
           </div>
         </ScrollReveal>
       </section>
+
       <ScrollReveal delay={300}>
         {/* Partenaires - ILS NOUS FONT CONFIANCE */}
+
         <PartnersLogos />
       </ScrollReveal>
+
       {/* CTA Section */}
+
       <section className="cta-section">
         <ScrollReveal delay={700}>
           <div className="container">
             <h2>Prêt à démarrer votre projet avec nous ?</h2>
+
             <p style={{ marginBottom: '30px' }}>
               Contactez-nous dès aujourd&apos;hui pour obtenir une solution sur
               mesure.
             </p>
+
             <Link href="/contact" className="btn btn-secondary">
               Discutons de votre projet
             </Link>
