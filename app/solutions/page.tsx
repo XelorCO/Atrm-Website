@@ -51,12 +51,12 @@ export default function SolutionsPage() {
       images: [
         '/tr-silo1.jpg',
         '/tr-silo2.jpg',
-        //'/tr-silo3.jpg',
-        //'/tr-silo4.jpg',
+        '/tr-silo3.JPG',
+        '/tr-silo4.JPG',
         '/tr-silo5.jpg',
         '/tr-silo6.jpg',
         '/tr-silo7.jpg',
-        //'/tr-silo8.jpg',
+        '/tr-silo8.JPG',
       ],
       content:
         'Nous concevons, adaptons et rénovons tout type de trémie et silo selon vos besoins spécifiques. Que ce soit pour résister à la chaleur, à la corrosion ou à l’abrasion, nous vous proposons des solutions sur mesure, optimisées pour vos contraintes et votre utilisation.',
