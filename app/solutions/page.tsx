@@ -51,12 +51,12 @@ export default function SolutionsPage() {
       images: [
         '/tr-silo1.jpg',
         '/tr-silo2.jpg',
-        '/tr-silo3.jpg',
-        '/tr-silo4.jpg',
+        //'/tr-silo3.jpg',
+        //'/tr-silo4.jpg',
         '/tr-silo5.jpg',
         '/tr-silo6.jpg',
         '/tr-silo7.jpg',
-        '/tr-silo8.jpg',
+        //'/tr-silo8.jpg',
       ],
       content:
         'Nous concevons, adaptons et rénovons tout type de trémie et silo selon vos besoins spécifiques. Que ce soit pour résister à la chaleur, à la corrosion ou à l’abrasion, nous vous proposons des solutions sur mesure, optimisées pour vos contraintes et votre utilisation.',
@@ -77,10 +77,10 @@ export default function SolutionsPage() {
       id: 'chaine',
       title: 'Transporteur à chaîne',
       images: [
-        '/tptr-a-chn1.jpg',
+        //'/tptr-a-chn1.jpg',
         '/tptr-a-chn2.jpg',
-        '/tptr-a-chn3.jpg',
-        '/tptr-a-chn4.jpg',
+        //'/tptr-a-chn3.jpg',
+        //'/tptr-a-chn4.jpg',
         '/tptr-a-chn5.jpg',
       ],
       content:
@@ -89,7 +89,7 @@ export default function SolutionsPage() {
     {
       id: 'bande',
       title: 'Transporteur à bande',
-      images: ['/tptr-a-bd1.jpg', '/tptr-a-bd2.png'],
+      images: ['/tptr-a-bd2.png'],
       content:
         "Idéaux pour le déplacement de vrac ou de pièces diverses, nos transporteurs à bande s'adaptent à toutes vos contraintes logistiques. Disponibles en série légère (gain de place), série lourde (charges importantes) ou en auge (grands volumes), ils offrent une solution fiable, modulable et efficace pour chaque besoin industriel.",
     },
@@ -99,12 +99,12 @@ export default function SolutionsPage() {
       images: [
         '/ext-gad-hydro1.jpg',
         '/ext-gad-hydro2.jpg',
-        '/ext-gad-hydro3.jpg',
-        '/ext-gad-hydro4.jpg',
-        '/ext-gad-hydro5.jpg',
-        '/ext-gad-hydro6.jpg',
-        '/ext-gad-hydro7.jpg',
-        '/ext-gad-hydro8.jpg',
+        //'/ext-gad-hydro3.jpg',
+        //'/ext-gad-hydro4.jpg',
+        //'/ext-gad-hydro5.jpg',
+        //'/ext-gad-hydro6.jpg',
+        //'/ext-gad-hydro7.jpg',
+        //'/ext-gad-hydro8.jpg',
       ],
       content:
         "Conçus pour le déchargement étanche de fours, ces extracteurs capotés limitent poussières et émissions. Équipés de chaînes forgées ou marines, ils s'adaptent aux produits complexes (fins, collants). Dotés d'une boîte à eau avec sonde radar et limiteur de couple, ils garantissent un contrôle précis, une sécurité accrue et une maintenance facilitée.",
@@ -119,7 +119,7 @@ export default function SolutionsPage() {
     {
       id: 'elevateur',
       title: 'Élevateurs à godets',
-      images: ['/elev-godet1.JPG', '/elev-godet2.JPG', '/elev-godet3.JPG'],
+      images: ['/elev-godet1.JPG'],
       content:
         'Nos élévateurs à godets sont conçus pour le transport vertical de tous types de produits en vrac : carbone, charbon, sel, fines, pellets et matériaux similaires. Disponible en version à chaînes ou à bandes, il s’adapte aux contraintes de chaque installation industrielle.',
     },
@@ -133,7 +133,7 @@ export default function SolutionsPage() {
     {
       id: 'bande-eau',
       title: 'Convoyeur à bande en eau',
-      images: ['/conv-b-eau1.jpg', '/conv-b-eau2.jpg', '/conv-b-eau3.jpg'],
+      images: ['/conv-b-eau2.jpg'],
       content:
         'Nos convoyeurs à bande en eau offrent une solution innovante pour le transport de produits de combustion. La bande permet de limiter les coûts de maintenance comparativement aux systèmes à chaîne. La caisse en inox ferritique assure une résistance durable à la corrosion.',
     },
