@@ -133,7 +133,7 @@ export default function SolutionsPage() {
     {
       id: 'bande-eau',
       title: 'Convoyeur à bande en eau',
-      images: ['/conv-b-eau1.JPG', '/conv-b-eau2.JPG', '/conv-b-eau3.JPG'],
+      images: ['/conv-b-eau1.JPG', '/conv-b-eau2.jpg', '/conv-b-eau3.JPG'],
       content:
         'Nos convoyeurs à bande en eau offrent une solution innovante pour le transport de produits de combustion. La bande permet de limiter les coûts de maintenance comparativement aux systèmes à chaîne. La caisse en inox ferritique assure une résistance durable à la corrosion.',
     },
