@@ -68,7 +68,7 @@ export default async function HomePage() {
           <div className="about-preview-grid">
             <div className="about-preview-image fade-in">
               <Image
-                src="/20250408_201653.jpg"
+                src="/trommel1.png"
                 alt="Installation d'équipements de convoyage par l'équipe ATRM"
                 width={600}
                 height={450}
