@@ -15,7 +15,9 @@ export default async function RealisationsPage() {
       <ScrollReveal delay={300}>
         <section className="page-header fade-in">
           <div className="container">
-            <h1>Toutes nos réalisations</h1>
+            <h1 style={{ color: '#fefe00', fontSize: '64px' }}>
+              Toutes nos réalisations
+            </h1>
             <p>
               Retrouvez ici les dernières nouvelles concernant nos projets et
               notre entreprise.
@@ -25,7 +27,6 @@ export default async function RealisationsPage() {
 
         <section className="news news--realisations">
           <div className="container">
-            <h2 className="fade-in">Nos Dernières Réalisations</h2>
             <Filter publications={publications} />
           </div>
         </section>

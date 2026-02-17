@@ -28,22 +28,22 @@ export default async function HomePage() {
           <div className="container">
             <div className="features-grid">
               <Link
-                href="/solutions#equipements"
+                href="/solutions#integration"
                 className="feature-link fade-in"
                 style={{ transitionDelay: '0.2s' }}
               >
                 <div className="feature-item">
-                  <h3>Équipement de manutention et de convoyage</h3>
+                  <h3>Intégration d&apos;équipements</h3>
                 </div>
               </Link>
 
               <Link
-                href="/solutions#integration"
+                href="/solutions#equipements"
                 className="feature-link fade-in"
                 style={{ transitionDelay: '0.4s' }}
               >
                 <div className="feature-item">
-                  <h3>Intégration d&apos;équipements</h3>
+                  <h3>Équipement de manutention et de convoyage</h3>
                 </div>
               </Link>
 
@@ -109,7 +109,12 @@ export default async function HomePage() {
       <section className="news">
         <ScrollReveal delay={300}>
           <div className="container">
-            <h2 className="fade-in">Nos Dernières Réalisations</h2>
+            <h2
+              className="fade-in"
+              style={{ color: '#fefe00', fontSize: '48px' }}
+            >
+              Nos Dernières Réalisations
+            </h2>
 
             <div
               className="news-grid fade-in"
@@ -128,7 +133,7 @@ export default async function HomePage() {
 
             <div className="text-center" style={{ marginTop: '40px' }}>
               <Link href="/realisations" className="btn btn-secondary">
-                Toutes nos réalisations
+                Tout nos projets
               </Link>
             </div>
           </div>

@@ -111,13 +111,13 @@ export default function Header() {
               </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <Link href="/solutions#equipements" onClick={closeMenu}>
-                    Équipements de manutention et de convoyage
+                  <Link href="/solutions#integration" onClick={closeMenu}>
+                    Intégration d&apos;équipements
                   </Link>
                 </li>
                 <li>
-                  <Link href="/solutions#integration" onClick={closeMenu}>
-                    Intégration d&apos;équipements
+                  <Link href="/solutions#equipements" onClick={closeMenu}>
+                    Équipements de manutention et de convoyage
                   </Link>
                 </li>
                 <li>
